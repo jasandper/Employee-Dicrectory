@@ -8,7 +8,7 @@ A React application that allows the user to view their entire employee directory
 
 ![Landing Page](./employee.png)
 
-[Deployed App]("")
+[Deployed App](https://jasandper.github.io/Employee-Dicrectory/)
 
 [GitHub Repo](https://github.com/jasandper/Employee-Dicrectory)
 
