@@ -6,7 +6,7 @@ function DataBody({ users }) {
         const dateArray = date.split("-");
         const year = dateArray[0];
         const month = dateArray[1];
-        const dayArray = dateArray[2];
+        const dayArray = dateArray[2].split("T");
         const day = dayArray[0];
         const formattedDate = [month, day, year].join("-");
         return formattedDate;
@@ -18,7 +18,7 @@ function DataBody({ users }) {
                 users.map(({ login, name, picture, phone, email, dob }) => {
                     return (
                         <tr key={login.uuid}>
-                            <td date-th="Image" className="align-middle">
+                            <td data-th="Image" className="align-middle">
                                 <img
                                   src={picture.medium}
                                   alt={"profile image for " + name.first + " " + name.last}
@@ -47,6 +47,6 @@ function DataBody({ users }) {
             )}
         </tbody>
     );
-
-    export default DataBody;
 }
+
+export default DataBody;
